@@ -56,7 +56,6 @@
 #
 
 
-
 name: Build & deploy spring apps
 on:
   push:
@@ -99,7 +98,8 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          dockerfile: Dockerfile
+          # FIX: Renamed 'dockerfile' to 'file' to resolve the warning/error
+          file: Dockerfile
           # Pushes the image immediately after a successful build
           push: true
           tags: ${{secrets.DOCKER_HUB_USERNAME}}/SpringActions:latest
