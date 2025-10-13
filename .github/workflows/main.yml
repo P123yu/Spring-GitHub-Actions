@@ -30,7 +30,7 @@ jobs:
         uses: actions/build-push-action@v5
         with:
           context: .
-          dockerfile: Dockerfile
+          file: Dockerfile
           push: false
           tags: ${{secrets.DOCKER_HUB_USERNAME}}/SpringActions:latest
 
