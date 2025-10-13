@@ -103,6 +103,4 @@ jobs:
           # Pushes the image immediately after a successful build
           push: true
           tags: ${{secrets.DOCKER_HUB_USERNAME}}/SpringActions:latest
-          # Use cache for faster subsequent builds
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+
