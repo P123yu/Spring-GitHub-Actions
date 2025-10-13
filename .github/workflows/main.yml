@@ -102,5 +102,5 @@ jobs:
           file: Dockerfile
           # Pushes the image immediately after a successful build
           push: true
-          tags: ${{secrets.DOCKER_HUB_USERNAME}}/SpringActions:latest
+          tags: ${{secrets.DOCKER_HUB_USERNAME}}/springactions:latest
 
