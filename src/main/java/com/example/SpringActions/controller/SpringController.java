@@ -10,6 +10,6 @@ public class SpringController {
 
     @GetMapping("/get")
     public String getMessage(){
-        return "this is a very and new spring boot with git hub action";
+        return "this is a very and new spring boot with git hub action ";
     }
 }
