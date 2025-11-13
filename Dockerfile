@@ -1,5 +1,5 @@
 #FROM openjdk:17-jdk
-FROM openjdk:17-jdk-slim
+FROM amazoncorretto:17-alpine
 WORKDIR /app
 COPY target/*.jar /app/springaction.jar
 EXPOSE 8080
